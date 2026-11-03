@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "primary_metric": "NDCG@10",
+  "k": 10,
+  "max_items": 6000,
+  "min_train_history": 3,
+  "knn": {"neighbors": [50, 150], "shrinkage": [10, 50]},
+  "ials": {"factors": [16, 32], "alpha": [10, 40], "regularization": [0.1, 1]},
+  "ease": {"regularization": [50, 200, 1000]},
+  "fm": {"factors": [16, 32], "regularization": [0.00001, 0.0001]},
+  "custom_als": {"beta": [0.5, 1], "half_life_days": [180, 730]},
+  "als_iterations": 10,
+  "fm_epochs": 12,
+  "fm_learning_rate": 0.01,
+  "fm_negative_ratio": 3,
+  "fm_batch_size": 4096
+}
